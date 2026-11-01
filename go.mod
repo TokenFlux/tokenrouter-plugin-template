@@ -3,7 +3,7 @@ module github.com/TokenFlux/tokenrouter-plugin-template
 go 1.27.3
 
 require (
-	github.com/TokenFlux/TokenRouter/plugin-sdk/go v0.1.0
+	github.com/TokenFlux/TokenRouter/plugin-sdk/go v0.1.1
 	google.golang.org/grpc v1.83.2
 )
 

@@ -1,7 +1,9 @@
 # Makefile builds the native and browser contributions as one validated release.
 # Dependencies and lockfiles are initialized once before frozen release builds;
 # development packages use the same declaration and assets as published archives.
-SDK_VERSION ?= v0.1.0
+
+# SDK_VERSION pins the packaging CLI to the Go SDK required by go.mod.
+SDK_VERSION ?= v0.1.1
 TRPLUGIN ?= go run github.com/TokenFlux/TokenRouter/plugin-sdk/go/cmd/trplugin@$(SDK_VERSION)
 PLATFORMS := linux/amd64 linux/arm64 darwin/amd64 darwin/arm64 windows/amd64
 
